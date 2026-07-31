@@ -1,5 +1,11 @@
-export default function Container() {
-  return (
-    <div className="bg-slate-400 border-[2px] border-red-600 p-1 max-w-[98%] mx-auto"></div>
-  );
+type ContainerProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+export default function Container({
+  children,
+  className = "",
+}: ContainerProps) {
+  return <div className={`w-[90%] mx-auto ${className}`}>{children}</div>;
 }

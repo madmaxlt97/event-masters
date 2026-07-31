@@ -18,7 +18,7 @@ export default function Header() {
           className="font-semibold text-[16px] sm:text-[20px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px] min-[400px]:max-w-none"
           href="/"
         >
-          Event masters
+          <h1>Event masters</h1>
         </Link>
 
         <div className="flex items-center gap-2 min-[340px]:gap-4 sm:gap-6">

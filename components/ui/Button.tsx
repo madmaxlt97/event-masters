@@ -13,7 +13,7 @@ export default function Button({
   className = "",
   href,
 }: ButtonProps) {
-  const buttonStyles = `hover:cursor-pointer px-6 py-3 rounded-xl ${className}`;
+  const buttonStyles = `hover:cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-xl ${className}`;
 
   if (href) {
     return (
