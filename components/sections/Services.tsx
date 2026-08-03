@@ -1,6 +1,6 @@
 import { services } from "@/data/services";
 import Container from "../ui/Container";
-import ServiceCard from "../ui/ServiceCard";
+import ServiceCard from "../services/ServiceCard";
 
 export default function Services() {
   return (
