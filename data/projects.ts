@@ -11,7 +11,7 @@ export const projects: Project[] = [
     title: "Corporate Gala Evening",
     description:
       "A modern corporate event featuring premium table styling, stage decoration and ambient lighting.",
-    images: ["/hero-placeholder.avif"],
+    images: ["/about-placeholder.avif"],
   },
   {
     title: "Garden Birthday Celebration",
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Luxury Baby Shower",
     description:
       "Soft pastel decorations, balloon arrangements and personalized details for a memorable celebration.",
-    images: ["/hero-placeholder.avif"],
+    images: ["/about-placeholder.avif"],
   },
   {
     title: "Winter Wedding Reception",

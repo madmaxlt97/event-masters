@@ -1,6 +1,5 @@
 import React, { Children } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import ProjectCard from "../projects/ProjectCard";
 
 type CarouselProps = {
   children: React.ReactNode;
@@ -9,21 +8,22 @@ type CarouselProps = {
 export default function Carousel({ children }: CarouselProps) {
   const [emblaRef] = useEmblaCarousel();
 
-  const slides = Children.toArray(children).map((child) => (
-    <div className="embla_slide" key={crypto.randomUUID()}>
+  const slides = Children.toArray(children).map((child, index) => (
+    <div
+      className="carousel-slide shrink-0 basis-full lg:basis-1/2 px-3"
+      key={index}
+    >
       {child}
     </div>
   ));
 
   return (
     <div>
-      <div className="embla_viewport overflow-hidden" ref={emblaRef}>
-        <div className="embla_container flex touch-pan-y pinch-zoom">
-          {slides}
-        </div>
+      <div className="carousel-viewport overflow-hidden" ref={emblaRef}>
+        <div className="carousel-container flex">{slides}</div>
       </div>
-      <button className="embla_prev">←</button>
-      <button className="embla_next">→</button>
+      {/*<button className="embla_prev">←</button>
+      <button className="embla_next">→</button>*/}
     </div>
   );
 }
