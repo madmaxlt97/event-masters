@@ -7,6 +7,9 @@ export default function Projects() {
   return (
     <section className="py-20 bg-gray-50">
       <Container>
+        <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
+          PROJECTS WE ARE PROUD OF
+        </p>
         <Carousel>
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />

@@ -13,8 +13,6 @@ export default function Carousel({ children }: CarouselProps) {
     if (!emblaApi) return;
 
     const handleScroll = () => {
-      console.log(emblaApi.scrollProgress());
-
       setScrollProgress(emblaApi.scrollProgress());
     };
 
