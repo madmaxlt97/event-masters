@@ -17,18 +17,18 @@ export const projects: Project[] = [
     title: "Garden Birthday Celebration",
     description:
       "An intimate outdoor birthday party with natural decorations, custom seating and cozy evening lights.",
-    images: ["/hero-placeholder.avif"],
+    images: ["/events-photos/birthday-celebration.avif"],
   },
   {
     title: "Luxury Baby Shower",
     description:
       "Soft pastel decorations, balloon arrangements and personalized details for a memorable celebration.",
-    images: ["/about-placeholder.avif"],
+    images: ["/events-photos/baby-shower.avif"],
   },
   {
     title: "Winter Wedding Reception",
     description:
       "A sophisticated winter-themed wedding with crystal accents, candles and seasonal floral design.",
-    images: ["/hero-placeholder.avif"],
+    images: ["/events-photos/winter-wedding.avif"],
   },
 ];
