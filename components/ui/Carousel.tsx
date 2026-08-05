@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React, { Children, useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 type CarouselProps = {
@@ -6,11 +6,30 @@ type CarouselProps = {
 };
 
 export default function Carousel({ children }: CarouselProps) {
-  const [emblaRef] = useEmblaCarousel();
+  const [emblaRef, emblaApi] = useEmblaCarousel();
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const handleScroll = () => {
+      console.log(emblaApi.scrollProgress());
+
+      setScrollProgress(emblaApi.scrollProgress());
+    };
+
+    handleScroll();
+
+    emblaApi.on("scroll", handleScroll);
+
+    return () => {
+      emblaApi.off("scroll", handleScroll);
+    };
+  }, [emblaApi]);
 
   const slides = Children.toArray(children).map((child, index) => (
     <div
-      className="carousel-slide shrink-0 basis-full lg:basis-1/2 px-3"
+      className="carousel-slide shrink-0 basis-full lg:basis-[40%] px-3"
       key={index}
     >
       {child}
@@ -21,9 +40,13 @@ export default function Carousel({ children }: CarouselProps) {
     <div>
       <div className="carousel-viewport overflow-hidden" ref={emblaRef}>
         <div className="carousel-container flex">{slides}</div>
+        <div className="progress-track w-full bg-gray-200 rounded h-[5px] overflow-hidden mt-3">
+          <div
+            className="progress-fill bg-black  rounded h-full"
+            style={{ width: `${scrollProgress * 100}%` }}
+          />
+        </div>
       </div>
-      {/*<button className="embla_prev">←</button>
-      <button className="embla_next">→</button>*/}
     </div>
   );
 }
