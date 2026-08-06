@@ -1,10 +1,11 @@
 import { services } from "@/data/services";
 import Container from "../ui/Container";
 import ServiceCard from "../services/ServiceCard";
+import FadeIn from "../animations/FadeIn";
 
 export default function Services() {
   return (
-    <>
+    <FadeIn>
       <section className="py-20">
         <Container>
           <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
@@ -30,6 +31,6 @@ export default function Services() {
           </div>
         </Container>
       </section>
-    </>
+    </FadeIn>
   );
 }

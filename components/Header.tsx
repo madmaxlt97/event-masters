@@ -14,12 +14,14 @@ export default function Header() {
   return (
     <>
       <nav className="sticky top-0 z-50 backdrop-blur-md flex flex-row justify-between items-center p-2 pl-4 pr-4">
-        <Link
-          className="font-semibold text-[16px] sm:text-[20px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px] min-[400px]:max-w-none"
-          href="/"
-        >
-          <h1>Event masters</h1>
-        </Link>
+        <h1>
+          <Link
+            className="font-semibold text-[16px] sm:text-[20px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px] min-[400px]:max-w-none"
+            href="/"
+          >
+            Event masters
+          </Link>
+        </h1>
 
         <div className="flex items-center gap-2 min-[340px]:gap-4 sm:gap-6">
           {links.map((link) => {
@@ -31,7 +33,7 @@ export default function Header() {
                 className={`text-[10px] min-[340px]:text-[12px] sm:text-[16px] transition-all duration-300 ${
                   isActive
                     ? "text-white scale-110 font-bold"
-                    : "text-gray-400 hover:text-gray-200"
+                    : "text-gray-400 hover:text-black"
                 }`}
               >
                 {link.label}

@@ -1,6 +1,7 @@
 import Button from "../ui/Button";
 import Image from "next/image";
 import Container from "../ui/Container";
+import FadeIn from "../animations/FadeIn";
 
 export default function Hero() {
   return (
@@ -11,27 +12,34 @@ export default function Hero() {
             <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
               Luxury Event Studio
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-4">
-              Creating unforgettable events with elegance and style
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed pb-10">
-              We create unforgettable celebrations that become lifelong
-              memories.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Button
-                href="/contacts"
-                className="border-1 border-red-300 bg-red-50 hover:-translate-y-1 hover:shadow-xl hover:bg-red-100 transition-all duration-300 ease-in-out"
-              >
-                Contact us →
-              </Button>
-              <Button
-                href="/projects"
-                className="border-1 border-red-300 bg-red-50 hover:-translate-y-1 hover:shadow-xl hover:bg-red-100 transition-all duration-300 ease-in-out"
-              >
-                See our works →
-              </Button>
-            </div>
+            <FadeIn delay={0}>
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight pb-4">
+                Creating unforgettable events with elegance and style
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed pb-10">
+                We create unforgettable celebrations that become lifelong
+                memories.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.4}>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <Button
+                  href="/contacts"
+                  className="border-1 border-red-300 bg-red-50 hover:-translate-y-1 hover:shadow-xl hover:bg-red-100 transition-all duration-300 ease-in-out"
+                >
+                  Contact us →
+                </Button>
+
+                <Button
+                  href="/projects"
+                  className="border-1 border-red-300 bg-red-50 hover:-translate-y-1 hover:shadow-xl hover:bg-red-100 transition-all duration-300 ease-in-out"
+                >
+                  See our works →
+                </Button>
+              </div>
+            </FadeIn>
             <div className="flex gap-4 mt-8">
               <div className="rounded-xl bg-gray-100 px-4 py-3 text-center">
                 <p className="font-bold text-xl">50+</p>
