@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Container from "@/components/ui/Container";
+import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
@@ -30,9 +31,11 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <SmoothScroll />
         <Header />
 
         <main className="flex-1 bg-slate-50">{children}</main>
+        <Footer />
       </body>
     </html>
   );
