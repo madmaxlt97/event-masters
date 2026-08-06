@@ -15,7 +15,7 @@ export default function About() {
                   width={700}
                   height={500}
                   alt="Wedding hall decoration"
-                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
             </div>
