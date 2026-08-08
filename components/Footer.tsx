@@ -1,4 +1,5 @@
 import Container from "./ui/Container";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -15,10 +16,18 @@ export default function Footer() {
           <div>
             <h4 className="font-medium mb-4">Navigation</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>About</li>
-              <li>Services</li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li>
+                <Link href="/#about">About</Link>
+              </li>
+              <li>
+                <Link href="/#services">Services</Link>
+              </li>
+              <li>
+                <Link href="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link href="/#contact">Contact</Link>
+              </li>
             </ul>
           </div>
           <div>

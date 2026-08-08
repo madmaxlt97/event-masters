@@ -18,7 +18,7 @@
 
 ## Pages
 
-- [ ] Projects
+- [x] Projects
 - [ ] Services
 - [ ] Contact
 
