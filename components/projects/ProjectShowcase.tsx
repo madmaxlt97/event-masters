@@ -5,21 +5,31 @@ import Container from "../ui/Container";
 
 type ProjectCardProps = {
   project: Project;
+  priority?: boolean;
+  reverse?: boolean;
 };
-export default function ProjectShowcase({ project }: ProjectCardProps) {
+export default function ProjectShowcase({
+  project,
+  priority = false,
+  reverse = false,
+}: ProjectCardProps) {
   return (
     <article>
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-3xl max-w-3xl">
+          <div
+            className={`relative aspect-[16/9] overflow-hidden rounded-3xl max-w-3xl ${reverse ? "lg:order-2" : "lg:order-1"}`}
+          >
             <Image
               src={project.images[0]}
               alt={project.title}
               fill
+              priority={priority}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
-          <div className="max-w-lg">
+          <div className={`max-w-lg ${reverse ? "lg:order-1" : "lg:order-2"}`}>
             <p className="mb-3 text-sm uppercase tracking-widest text-gray-500">
               Featured Project
             </p>
