@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Project } from "@/types/projects";
-import { div } from "motion/react-client";
 
 type ProjectGalleryProps = {
   project: Project;
@@ -12,7 +11,7 @@ export default function ProjectGallery({ project }: ProjectGalleryProps) {
   if (!images.length) return null;
 
   return (
-    <div className="mt-16 grid gap-16 sm:grid-cols-2">
+    <div className="mt-16 grid gap-6 sm:grid-cols-2">
       {images.map((image, index) => (
         <div
           key={image}

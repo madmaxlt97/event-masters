@@ -32,7 +32,7 @@ export default function Header() {
                 href={link.href}
                 className={`text-[10px] min-[340px]:text-[12px] sm:text-[16px] transition-all duration-300 ${
                   isActive
-                    ? "text-white scale-110 font-bold"
+                    ? "text-black font-bold"
                     : "text-gray-400 hover:text-black"
                 }`}
               >
