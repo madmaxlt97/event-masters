@@ -6,7 +6,7 @@ import FadeIn from "../animations/FadeIn";
 export default function Services() {
   return (
     <FadeIn>
-      <section id="services" className="py-20">
+      <section id="services" className="py-14 sm:py-16 lg:py-20">
         <Container>
           <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
             Our services

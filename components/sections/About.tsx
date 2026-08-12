@@ -5,7 +5,7 @@ import FadeIn from "../animations/FadeIn";
 export default function About() {
   return (
     <FadeIn>
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-14 sm:py-16 lg:py-20 bg-gray-50">
         <Container>
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1">
