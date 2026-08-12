@@ -4,7 +4,7 @@ import ProjectsList from "@/components/projects/ProjectsList";
 export default function ProjectsPage() {
   return (
     <main>
-      <section className="py-24">
+      <section className="py-14 sm:py-16 lg:py-20">
         <Container>
           <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
             OUR PORTFOLIO
