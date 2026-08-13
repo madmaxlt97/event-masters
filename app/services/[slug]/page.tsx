@@ -22,7 +22,6 @@ export default async function ServicePage({ params }: ServicePageProps) {
   return (
     <main className="text-gray-900">
       <section>
-        {/*className="py-14 sm:py-16 lg:py-20"*/}
         <Container>
           <FadeIn>
             <Link
@@ -71,10 +70,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 Ready to create something beautiful?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-gray-600">
-                Let's bring your vision to life
+                Let's bring your vision to life.
               </p>
               <Button href="/#contact" className="mt-8">
-                Start you project →
+                Start your project →
               </Button>
             </div>
           </FadeIn>

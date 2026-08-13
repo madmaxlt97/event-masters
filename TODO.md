@@ -19,7 +19,7 @@
 ## Pages
 
 - [x] Projects
-- [ ] Services
+- [x] Services
 - [ ] Contact
 
 ## SEO
