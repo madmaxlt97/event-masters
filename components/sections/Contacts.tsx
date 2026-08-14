@@ -23,7 +23,7 @@ export default function Contacts() {
                 corporate event, we'd love to hear your ideas and help turn them
                 into reality.
               </p>
-              <Button>Start Your Project</Button>
+              <Button href="/contact">Start Your Project</Button>
 
               <div className="mt-10 space-y-6">
                 {contacts.map((contact) => (

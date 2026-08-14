@@ -12,11 +12,16 @@ export default function Projects() {
           <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
             PROJECTS WE ARE PROUD OF
           </p>
-          <Carousel>
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
-          </Carousel>
+          <h2 className="text-4xl font-bold">
+            A few events we've brought to life.
+          </h2>
+          <div className="mt-12">
+            <Carousel>
+              {projects.map((project) => (
+                <ProjectCard key={project.title} project={project} />
+              ))}
+            </Carousel>
+          </div>
         </Container>
       </section>
     </FadeIn>

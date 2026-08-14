@@ -21,7 +21,7 @@ export default function ProjectGallery({ project }: ProjectGalleryProps) {
             src={image}
             alt={`${project.title} - image ${index + 2}`}
             fill
-            sizes="(max-width: 640px) 10vw, 50vw"
+            sizes="(max-width: 640px) 100vw, 50vw"
             className="object-cover transition-transform duration-700 hover:scale-105"
           />
         </div>

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center">
       <Container>
-        <div className=" w-full flex flex-col md:flex-row items-center gap-10">
+        <div className="w-full flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
               Luxury Event Studio
@@ -57,11 +57,12 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden rounded-3xl">
+          <div className="relative w-full h-[280px] sm:h-[360px] md:h-[500px] md:flex-[1.25] overflow-hidden rounded-3xl">
             <Image
               src="/hero-placeholder.avif"
-              width={700}
-              height={500}
+              fill
+              priority
+              sizes="(max-width: 767px) 100vw, 55vw"
               alt="Wedding hall decoration"
               className="rounded-3xl shadow-2xl object-cover h-full "
             />

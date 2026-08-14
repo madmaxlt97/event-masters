@@ -20,7 +20,7 @@
 
 - [x] Projects
 - [x] Services
-- [ ] Contact
+- [x] Contact
 
 ## SEO
 

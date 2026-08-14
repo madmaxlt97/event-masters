@@ -5,11 +5,13 @@ import Container from "../ui/Container";
 
 type ProjectCardProps = {
   project: Project;
+  index: number;
   priority?: boolean;
   reverse?: boolean;
 };
 export default function ProjectShowcase({
   project,
+  index,
   priority = false,
   reverse = false,
 }: ProjectCardProps) {
@@ -31,13 +33,16 @@ export default function ProjectShowcase({
           </div>
           <div className={`max-w-lg ${reverse ? "lg:order-1" : "lg:order-2"}`}>
             <p className="mb-3 text-sm uppercase tracking-widest text-gray-500">
-              Featured Project
+              PROJECT {String(index + 1).padStart(2, "0")}
             </p>
             <h2 className=" text-3xl font-semibold">{project.title}</h2>
             <p className="mt-5 leading-7 text-gray-600">
               {project.description}
             </p>
-            <Button href={`/projects/${project.slug}`} className="mt-7">
+            <Button
+              href={`/projects/${project.slug}`}
+              className="mt-7 shrink-0 font-medium text-gray-500 transition-colors duration-300 hover:text-black"
+            >
               View Project →
             </Button>
           </div>

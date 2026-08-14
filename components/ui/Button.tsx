@@ -5,6 +5,7 @@ type ButtonProps = {
   onClick?: () => void;
   className?: string;
   href?: string;
+  type?: "button" | "submit" | "reset";
 };
 
 export default function Button({
@@ -12,6 +13,7 @@ export default function Button({
   onClick,
   className = "",
   href,
+  type = "button",
 }: ButtonProps) {
   const buttonStyles = `hover:cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-xl ${className}`;
 
@@ -23,7 +25,7 @@ export default function Button({
     );
   }
   return (
-    <button onClick={onClick} className={buttonStyles}>
+    <button type={type} onClick={onClick} className={buttonStyles}>
       {children}
     </button>
   );

@@ -10,9 +10,9 @@ export default function ProjectsList() {
           <FadeIn key={project.title}>
             <ProjectShowcase
               project={project}
+              index={index}
               reverse={index % 2 !== 0}
               priority={index === 0}
-              /*index={index}*/
             />
           </FadeIn>
         ))}

@@ -26,18 +26,18 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <main className="text-gray-900">
       <section className="pt-14 pb-8 sm:pt-16 sm:pb-10 lg:pt-20 lg:pb-12">
         <Container>
-          <Link
-            href="/projects"
-            className="inline-flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-gray-900"
-          >
-            ← Back to projects
-          </Link>
           <FadeIn>
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-gray-900"
+            >
+              ← Back to projects
+            </Link>
             <div className="mt-10">
               <p className="text-sm uppercase tracking-widest text-gray-500">
                 OUR PROJECT
               </p>
-              <h1 className="mt-3 text-4xl font-semibold sm:text-5xl leg:text-6xl">
+              <h1 className="mt-3 text-4xl font-semibold sm:text-5xl lg:text-6xl">
                 {project.title}
               </h1>
               <p className="mt-4 max-w-2xl text-lg text-gray-600">
@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 alt={project.title}
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 100vw"
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
@@ -60,17 +60,19 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <FadeIn>
             <ProjectGallery project={project} />
           </FadeIn>
-          <div className="mt-20 border-t border-border-custom pt-16 text-center">
-            <h2 className="text-3xl font-semibold sm:text-4xl">
-              Planning something special?
-            </h2>
-            <p className="mx-auto mt-4 max-w-xl text-gray-600">
-              Let's create an event that feels uniquely yours.
-            </p>
-            <Button href="/#contact" className="mt-8">
-              Start Your Project →
-            </Button>
-          </div>
+          <FadeIn>
+            <div className="mt-20 border-t border-border-custom pt-16 text-center">
+              <h2 className="text-3xl font-semibold sm:text-4xl">
+                Planning something special?
+              </h2>
+              <p className="mx-auto mt-4 max-w-xl text-gray-600">
+                Let's create an event that feels uniquely yours.
+              </p>
+              <Button href="/#contact" className="mt-8">
+                Start Your Project →
+              </Button>
+            </div>
+          </FadeIn>
         </Container>
       </section>
     </main>

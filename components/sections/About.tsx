@@ -15,7 +15,8 @@ export default function About() {
                   width={700}
                   height={500}
                   alt="Wedding hall decoration"
-                  className="w-full object-cover transition-transform duration-500 hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="w-full object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
             </div>
@@ -30,7 +31,7 @@ export default function About() {
                   We create experiences people remember forever.
                 </span>
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed pb-10">
+              <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed mb-10">
                 From intimate weddings to large corporate events, we carefully
                 design every detail to create beautiful and unforgettable
                 moments.

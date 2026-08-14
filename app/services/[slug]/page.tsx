@@ -21,7 +21,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
   return (
     <main className="text-gray-900">
-      <section>
+      <section className="py-14 sm:py-16 lg:py-20">
         <Container>
           <FadeIn>
             <Link
@@ -56,7 +56,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 {service.details.map((detail) => (
                   <li
                     key={detail}
-                    className="border-b border-border-custom pb-5 text-lg text-gray-600"
+                    className="border-b border-border-custom py-5 text-lg text-gray-600 first:pt-0 last:border-b-0"
                   >
                     {detail}
                   </li>
@@ -72,7 +72,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               <p className="mx-auto mt-4 max-w-xl text-gray-600">
                 Let's bring your vision to life.
               </p>
-              <Button href="/#contact" className="mt-8">
+              <Button href="/contact" className="mt-8">
                 Start your project →
               </Button>
             </div>

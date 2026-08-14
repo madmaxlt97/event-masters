@@ -20,13 +20,13 @@ export default function Footer() {
                 <Link href="/#about">About</Link>
               </li>
               <li>
-                <Link href="/#services">Services</Link>
+                <Link href="/services">Services</Link>
               </li>
               <li>
                 <Link href="/projects">Projects</Link>
               </li>
               <li>
-                <Link href="/#contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -41,7 +41,6 @@ export default function Footer() {
         </div>
         <div className="mt-12 gap-4 border-t border-white/20 pt-6 flex flex-col md:flex-row md:justify-between">
           <p className="text-sm text-gray-400">
-            {" "}
             © 2026 Event Studio. All rights reserved.
           </p>
           <a className="text-sm text-gray-400 hover:text-white transition">

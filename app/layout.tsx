@@ -6,12 +6,12 @@ import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
   variable: "--font-body",
 });
 
 const playfair = Playfair_Display({
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
   variable: "--font-heading",
 });
 
