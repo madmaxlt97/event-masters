@@ -1,5 +1,12 @@
 import Container from "@/components/ui/Container";
 import ProjectsList from "@/components/projects/ProjectsList";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Projects",
+  description:
+    "Explore weddings, private celebrations, and corporate events created by Event Masters.",
+};
 
 export default function ProjectsPage() {
   return (

@@ -6,7 +6,7 @@ type FadeInProps = {
   delay?: number;
 };
 
-export default function FadeIn({ children, delay }: FadeInProps) {
+export default function FadeIn({ children, delay = 0 }: FadeInProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

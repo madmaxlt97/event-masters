@@ -1,6 +1,13 @@
 import Container from "@/components/ui/Container";
 import ServicesList from "@/components/services/ServicesList";
 import FadeIn from "@/components/animations/FadeIn";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services",
+  description:
+    "Explore our event planning, design, decoration, and coordination services.",
+};
 
 export default function Services() {
   return (

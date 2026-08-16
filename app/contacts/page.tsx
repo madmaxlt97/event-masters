@@ -3,6 +3,13 @@ import FadeIn from "@/components/animations/FadeIn";
 import { contacts } from "@/data/contacts";
 import ContactItem from "@/components/contacts/ContactItem";
 import Button from "@/components/ui/Button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Tell Event Masters about your event and let's create something beautiful together.",
+};
 
 export default function Contact() {
   return (

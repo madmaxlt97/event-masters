@@ -15,7 +15,16 @@ export default function Button({
   href,
   type = "button",
 }: ButtonProps) {
-  const buttonStyles = `hover:cursor-pointer inline-flex items-center justify-center px-6 py-3 rounded-xl ${className}`;
+  const buttonStyles = `
+  inline-flex items-center justify-center
+  rounded-xl px-6 py-3
+  cursor-pointer
+  transition-all duration-300
+  focus-visible:outline-none
+  focus-visible:ring-2 focus-visible:ring-black
+  focus-visible:ring-offset-2
+  ${className}
+`;
 
   if (href) {
     return (

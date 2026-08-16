@@ -16,8 +16,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Event Masters",
-  description: "We are here to make your event unforgettable.",
+  title: {
+    default: "Event Masters | Luxury Event Studio",
+    template: "%s | Event Masters",
+  },
+
+  description:
+    "Event Masters creates elegant, unforgettable weddings, private celebrations, and corporate events.",
 };
 
 export default function RootLayout({
