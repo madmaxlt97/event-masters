@@ -2,6 +2,7 @@ import Container from "./ui/Container";
 import Link from "next/link";
 
 export default function Footer() {
+  const footerLinkStyles = "transition-colors duration-300 hover:text-white";
   return (
     <footer className="bg-gray-950 text-white py-16">
       <Container>
@@ -17,34 +18,51 @@ export default function Footer() {
             <h4 className="font-medium mb-4">Navigation</h4>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <Link href="/#about">About</Link>
+                <Link href="/#about" className={footerLinkStyles}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/services">Services</Link>
+                <Link href="/services" className={footerLinkStyles}>
+                  Services
+                </Link>
               </li>
               <li>
-                <Link href="/projects">Projects</Link>
+                <Link href="/projects" className={footerLinkStyles}>
+                  Projects
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" className={footerLinkStyles}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           <div>
             <h4 className="font-medium mb-4">Contact</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>hello@eventmasters.com</li>
-              <li>+370 600 00000</li>
+              <li>
+                <a href="mailto:hello@eventmasters.com">
+                  hello@eventmasters.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+370 600 00000">+370 600 00000</a>
+              </li>
               <li>@eventmasters</li>
             </ul>
           </div>
         </div>
-        <div className="mt-12 gap-4 border-t border-white/20 pt-6 flex flex-col md:flex-row md:justify-between">
+        <div
+          className="mt-12 flex flex-col gap-4 border-t border-white/20
+          pt-6 md:flex-row md:items-center md:justify-between"
+        >
           <p className="text-sm text-gray-400">
-            © 2026 Event Studio. All rights reserved.
+            © 2026 Event Masters. All rights reserved.
           </p>
           <a className="text-sm text-gray-400 hover:text-white transition">
-            Cookies Policies
+            Cookie Policy
           </a>
         </div>
       </Container>
