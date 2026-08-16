@@ -89,7 +89,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               <p className="mx-auto mt-4 max-w-xl text-gray-600">
                 Let's bring your vision to life.
               </p>
-              <Button href="/contact" className="mt-8">
+              <Button href="/contacts" className="mt-8">
                 Start your project →
               </Button>
             </div>

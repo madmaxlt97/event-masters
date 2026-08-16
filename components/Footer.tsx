@@ -33,8 +33,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className={footerLinkStyles}>
-                  Contact
+                <Link href="/contacts" className={footerLinkStyles}>
+                  Contacts
                 </Link>
               </li>
             </ul>

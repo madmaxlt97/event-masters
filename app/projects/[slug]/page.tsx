@@ -85,7 +85,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <p className="mx-auto mt-4 max-w-xl text-gray-600">
                 Let's create an event that feels uniquely yours.
               </p>
-              <Button href="/#contact" className="mt-8">
+              <Button href="/#contacts" className="mt-8">
                 Start Your Project →
               </Button>
             </div>
