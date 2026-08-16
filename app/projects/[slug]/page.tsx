@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/Container";
@@ -12,6 +13,22 @@ type ProjectPageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: ProjectPageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const project = projects.find((project) => project.slug === slug);
+
+  if (!project) {
+    return {};
+  }
+  return {
+    title: project.title,
+    description: project.description,
+  };
+}
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;

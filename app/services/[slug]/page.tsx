@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { services } from "@/data/services";
 import { notFound } from "next/navigation";
 import Container from "@/components/ui/Container";
@@ -10,6 +11,22 @@ type ServicePageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: ServicePageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const service = services.find((service) => service.slug === slug);
+
+  if (!service) {
+    return {};
+  }
+  return {
+    title: service.title,
+    description: service.description,
+  };
+}
 
 export default async function ServicePage({ params }: ServicePageProps) {
   const { slug } = await params;
