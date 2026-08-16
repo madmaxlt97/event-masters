@@ -16,13 +16,47 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
+
   title: {
     default: "Event Masters | Luxury Event Studio",
     template: "%s | Event Masters",
   },
 
   description:
-    "Event Masters creates elegant, unforgettable weddings, private celebrations, and corporate events.",
+    "Event Masters creates elegant and unforgettable weddings, private celebrations, and corporate events.",
+
+  openGraph: {
+    title: "Event Masters | Luxury Event Studio",
+    description:
+      "Elegant and unforgettable weddings, private celebrations, and corporate events.",
+    siteName: "Event Masters",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Event Masters — Luxury Event Studio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Event Masters | Luxury Event Studio",
+    description:
+      "Elegant and unforgettable weddings, private celebrations, and corporate events.",
+    images: ["/opengraph-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

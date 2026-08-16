@@ -8,7 +8,7 @@ export default function Services() {
     <FadeIn>
       <section id="services" className="py-14 sm:py-16 lg:py-20">
         <Container>
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+          <p className="text-sm uppercase tracking-widest text-gray-600 mb-4">
             Our services
           </p>
           <h2 className="text-4xl font-bold mb-6">

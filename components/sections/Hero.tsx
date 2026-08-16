@@ -9,7 +9,7 @@ export default function Hero() {
       <Container>
         <div className="w-full flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
-            <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
+            <p className="mb-4 text-sm uppercase tracking-widest text-gray-600">
               Luxury Event Studio
             </p>
             <FadeIn delay={0}>
@@ -43,17 +43,17 @@ export default function Hero() {
             <div className="flex gap-4 mt-8">
               <div className="rounded-xl bg-gray-100 px-4 py-3 text-center">
                 <p className="font-bold text-xl">50+</p>
-                <p className="text-sm text-gray-500">Events</p>
+                <p className="text-sm text-gray-600">Events</p>
               </div>
 
               <div className="rounded-xl bg-gray-100 px-4 py-3 text-center">
                 <p className="font-bold text-xl">10+</p>
-                <p className="text-sm text-gray-500">Years</p>
+                <p className="text-sm text-gray-600">Years</p>
               </div>
 
               <div className="rounded-xl bg-gray-100 px-4 py-3 text-center">
                 <p className="font-bold text-xl">5★</p>
-                <p className="text-sm text-gray-500">Reviews</p>
+                <p className="text-sm text-gray-600">Reviews</p>
               </div>
             </div>
           </div>

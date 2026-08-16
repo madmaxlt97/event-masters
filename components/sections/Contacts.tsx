@@ -12,7 +12,7 @@ export default function Contacts() {
         <Container>
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
             <div className="lg:w-2/5">
-              <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
+              <p className="mb-4 text-sm uppercase tracking-widest text-gray-600">
                 GET IN TOUCH WITH US
               </p>
               <h2 className="text-4xl font-bold mb-6">

@@ -9,7 +9,7 @@ export default function Projects() {
     <FadeIn>
       <section className="py-14 sm:py-16 lg:py-20 bg-gray-50">
         <Container>
-          <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
+          <p className="mb-4 text-sm uppercase tracking-widest text-gray-600">
             PROJECTS WE ARE PROUD OF
           </p>
           <h2 className="text-4xl font-bold">

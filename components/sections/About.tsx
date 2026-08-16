@@ -21,7 +21,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex-1">
-              <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+              <p className="text-sm uppercase tracking-widest text-gray-600 mb-4">
                 About our studio
               </p>
 
