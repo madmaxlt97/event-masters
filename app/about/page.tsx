@@ -35,7 +35,9 @@ export default function AboutPage() {
                   src="/about-placeholder.avif"
                   alt="Event Masters creating an elegant celebration"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                  quality={60}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
