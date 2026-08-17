@@ -62,6 +62,7 @@ export default function Hero() {
               src="/hero-placeholder.avif"
               fill
               priority
+              quality={60}
               sizes="(max-width: 767px) 100vw, 55vw"
               alt="Wedding hall decoration"
               className="rounded-3xl shadow-2xl object-cover h-full "
