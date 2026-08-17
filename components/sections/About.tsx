@@ -9,14 +9,13 @@ export default function About() {
         <Container>
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1">
-              <div className="relative rounded-3xl overflow-hidden">
+              <div className="relative h-[280px] overflow-hidden rounded-3xl sm:h-[360px] md:h-[450px]">
                 <Image
                   src="/about-placeholder.avif"
-                  width={700}
-                  height={500}
+                  fill
                   alt="Wedding hall decoration"
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="w-full object-cover transition-transform duration-700 hover:scale-105"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
             </div>

@@ -65,7 +65,7 @@ export default function Hero() {
               quality={60}
               sizes="(max-width: 767px) 100vw, 55vw"
               alt="Wedding hall decoration"
-              className="rounded-3xl shadow-2xl object-cover h-full "
+              className="shadow-2xl object-cover h-full "
             />
           </div>
         </div>
