@@ -7,8 +7,8 @@ export default function About() {
     <FadeIn>
       <section id="about" className="py-14 sm:py-16 lg:py-20 bg-gray-50">
         <Container>
-          <div className="flex flex-col md:flex-row items-center gap-16">
-            <div className="flex-1">
+          <div className="flex flex-col items-center gap-16 md:flex-row">
+            <div className="w-full flex-1">
               <div className="relative h-[280px] overflow-hidden rounded-3xl sm:h-[360px] md:h-[450px]">
                 <Image
                   src="/about-placeholder.avif"
@@ -19,7 +19,7 @@ export default function About() {
                 />
               </div>
             </div>
-            <div className="flex-1">
+            <div className="w-full flex-1">
               <p className="text-sm uppercase tracking-widest text-gray-600 mb-4">
                 About our studio
               </p>
