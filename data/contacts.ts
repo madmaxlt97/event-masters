@@ -1,16 +1,18 @@
+import { Mail, Phone, Camera } from "lucide-react";
+
 export const contacts = [
   {
-    icon: "..",
+    icon: Mail,
     label: "Email",
     value: "hello@eventmasters.com",
   },
   {
-    icon: "...",
+    icon: Phone,
     label: "Phone",
     value: "+370 600 00000",
   },
   {
-    icon: "...",
+    icon: Camera,
     label: "Instagram",
     value: "@eventmasters",
   },

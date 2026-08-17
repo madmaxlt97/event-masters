@@ -4,6 +4,8 @@ import { contacts } from "@/data/contacts";
 import ContactItem from "@/components/contacts/ContactItem";
 import Button from "@/components/ui/Button";
 import type { Metadata } from "next";
+import GoogleMaps from "@/components/contacts/GoogleMaps";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -66,67 +68,15 @@ export default function Contact() {
                 <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
                   Let's talk about your event.
                 </h2>
-                <form className="mt-10 space-y-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium text-gray-700"
-                    >
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      required
-                      autoComplete="name"
-                      className="mt-2 w-full border-b border-gray-300 bg-transparent py-3 outline-none transition-colors focus:border-black placeholder:text-gray-400"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium text-gray-700"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="you@example.com"
-                      required
-                      autoComplete="email"
-                      className="mt-2 w-full border-b border-gray-300 bg-transparent py-3 outline-none transition-colors focus:border-black placeholder:text-gray-400"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium text-gray-700"
-                    >
-                      Tell us about your event
-                    </label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Tell us a little about what you're planning..."
-                      rows={4}
-                      required
-                      className="mt-2 w-full resize-none border-b border-gray-300 bg-transparent py-3 outline-none transition-colors focus:border-black placeholder:text-gray-400"
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    className="mt-4  bg-black px-7 py-3 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-gray-800 hover:shadow-lg"
-                  >
-                    Send Inquiry →
-                  </Button>
-                </form>
+                <ContactForm />
               </div>
             </FadeIn>
           </div>
+        </Container>
+      </section>
+      <section className="py-14 sm:py-16 lg:py-20">
+        <Container>
+          <GoogleMaps />
         </Container>
       </section>
     </main>
