@@ -61,9 +61,9 @@ export default function Footer() {
           <p className="text-sm text-gray-400">
             © 2026 Event Masters. All rights reserved.
           </p>
-          <a className="text-sm text-gray-400 hover:text-white transition">
+          {/* <a className="text-sm text-gray-400 hover:text-white transition">
             Cookie Policy
-          </a>
+          </a>*/}
         </div>
       </Container>
     </footer>

@@ -11,9 +11,9 @@
 
 ## Polish
 
-- [ ] Mobile spacing
-- [ ] Header scroll state
-- [ ] Hover consistency
+- [x] Mobile spacing
+- [x] Header scroll state
+- [x] Hover consistency
 - [ ] Image optimization
 
 ## Pages
@@ -24,12 +24,12 @@
 
 ## SEO
 
-- [ ] Metadata
-- [ ] Open Graph
-- [ ] Sitemap
-- [ ] Robots
+- [x] Metadata
+- [x] Open Graph
+- [x] Sitemap
+- [x] Robots
 
 ## Release
 
-- [ ] Lighthouse
-- [ ] Final testing
+- [x] Lighthouse
+- [x] Final testing
