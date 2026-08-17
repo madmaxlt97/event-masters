@@ -29,19 +29,17 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <Container>
           <div className="flex flex-col items-center gap-12 lg:flex-row">
-            <FadeIn className="w-full lg:w-1/2">
-              <div className="relative h-[400px] w-full overflow-hidden rounded-3xl lg:h-[550px]">
-                <Image
-                  src="/about-placeholder.avif"
-                  alt="Event Masters creating an elegant celebration"
-                  fill
-                  priority
-                  quality={60}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            </FadeIn>
+            <div className="relative h-[400px] w-full overflow-hidden rounded-3xl lg:h-[550px]">
+              <Image
+                src="/about-placeholder.avif"
+                alt="Event Masters creating an elegant celebration"
+                fill
+                priority
+                quality={60}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
 
             <FadeIn className="w-full lg:w-1/2" delay={0.2}>
               <div>
